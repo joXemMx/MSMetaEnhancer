@@ -104,3 +104,12 @@ def test_convert_inchikey_to_isomeric_smiles():
     )
     print(actual)
     assert actual["isomeric_smiles"] == expected
+
+
+@pytest.mark.dependency(depends=["test_service_available"])
+def test_convert_casno_to_inchikey():
+    cas_number = "57-27-2"
+    expected = "BQJCRHHNABKAKU-KBQPJGBKSA-N"
+
+    actual = asyncio.run(wrap_with_session(PubChem, "casno_to_inchikey", [cas_number]))
+    assert actual["inchikey"] == expected

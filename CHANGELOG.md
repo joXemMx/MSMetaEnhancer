@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 - Added `smiles_to_inchi`, `smiles_to_inchikey`, and `inchi_to_inchikey` conversions to the RDKit converter [#179](https://github.com/RECETOX/MSMetaEnhancer/pull/179)
+- Added `casno` as source for PubChem conversions, resolved by the PubChem name search
 ### Fixed
 - Parse the renamed PubChem SMILES labels `Absolute` and `Connectivity` (formerly `Isomeric` and `Canonical`), so `isomeric_smiles` and `canonical_smiles` are retrieved again
 
