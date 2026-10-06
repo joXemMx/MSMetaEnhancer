@@ -27,8 +27,8 @@ class PubChem(WebConverter):
             {"code": "inchikey", "label": "InChIKey", "extra": None},
             {"code": "iupac_name", "label": "IUPAC Name", "extra": "Preferred"},
             {"code": "formula", "label": "Molecular Formula", "extra": None},
-            {"code": "canonical_smiles", "label": "SMILES", "extra": "Canonical"},
-            {"code": "isomeric_smiles", "label": "SMILES", "extra": "Isomeric"},
+            {"code": "canonical_smiles", "label": "SMILES", "extra": "Connectivity"},
+            {"code": "isomeric_smiles", "label": "SMILES", "extra": "Absolute"},
         ]
 
         # generate top level methods defining allowed conversions
